@@ -30,6 +30,6 @@ newtryte = req3.text.split('"')[3]
 
 #broadcast new tryte
 req4 = requests.post(url, headers = header, data = json.dumps({'command': 'broadcastTransactions', 'trytes':[newtryte]}))
-print(req4.text + 'reattached and broadcastet')
+print(req4.text)
 
 
